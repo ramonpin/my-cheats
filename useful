@@ -1,0 +1,21 @@
+# This is a list of some useful programs/libraries I don't want to forget
+
+# click: Python library for command line arguments parsing
+URL: http://click.pocoo.org/5/
+
+# Terminal clients for Postgres and MySQL
+URL: http://pgcli.com
+URL: http://mycli.net
+
+# python-prompt-toolkit: Python library to create interactive tools like the previous ones
+UR: https://github.com/jonathanslenders/python-prompt-tool
+
+# pygments: Python library for syntax highlighting
+URL: http://pygments.org/
+
+# fuzzyfinder: Python library to fuzzy match an entry with a list of strings
+URL: https://github.com/amjith/fuzzyfinder
+
+# PyCon2017 video with example usage of previous libraries/programs 
+Video: https://www.youtube.com/watch?v=hJhZhLg3obk
+

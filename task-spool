@@ -1,0 +1,20 @@
+# Install with
+sudo aptitude install task-spooler
+
+#Queuing a command for execution
+tsp <cmd> <args...>
+
+# List all queued commands (shows command_id)
+tsp -l
+
+# Recover result from a command
+tsp -c <command_id>
+
+# Recover command statistics
+tsp -i <command_id>
+
+# 'tail -f' like result recovering
+tsp -tc <command_id>
+
+# Remove a command
+tsp -K <command_id>
