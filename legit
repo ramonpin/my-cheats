@@ -1,0 +1,21 @@
+# Legit: Git workflow for humans
+URL: http://www.git-legit.org/ 
+
+# Switches to branch. Stashes and restores unstaged changes.
+git switch <branch>
+
+# Syncronizes current branch. Auto-merge/rebase, un/stash.
+git sync
+
+# Publishes branch to remote server.
+git publish <branch>
+
+# Removes branch from remote server.
+git unpublish <branch>
+
+# Nice & pretty list of branches + publication status.
+git branches
+
+# Removes the last commit from history.
+git undo [--hard]
+
