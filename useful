@@ -19,3 +19,9 @@ URL: https://github.com/amjith/fuzzyfinder
 # PyCon2017 video with example usage of previous libraries/programs 
 Video: https://www.youtube.com/watch?v=hJhZhLg3obk
 
+# dulwich: pure python library for git interaction
+pip install dulwich
+
+# paramiko: ssh client/server python library 
+pip install paramiko
+
