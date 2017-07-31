@@ -1,0 +1,32 @@
+# Plain text accounting software
+
+# Clone and install development version (the one used by the author)
+git clone https://github.com/simonmichael/hledger
+cd hledger
+stack install hledger-lib hledger hledger-ui hledger-web hledger-api
+
+# Get statistics from a griven ledger file
+hledger stats -f <ledgerfile>
+
+# Add transactions to a ledger file
+hledger add -f <ledgerfile> 
+
+# Get info from a legder file
+hledger activity -f <ledgerfile> 
+hledger balance -f <ledgerfile> 
+hledger accounts -f <ledgerfile>
+hledger balancesheet -f <ledgerfile> 
+
+# Show transacctions in a ledgerfile
+hledger print -x -f <ledgerfile> 
+hledger register -f <ledgerfile> 
+hledger register <account> -f <ledgerfile>
+
+# Open de curses console with a ledger file 
+hledger-ui -f <legderfile> 
+
+# Some complex examples
+hledger balance --monthly --cumulative -f prueba.ledger | less -SC
+hledger balance --daily --cumulative -f prueba.ledger | less -SC
+hledger balance --daily --cumulative -f prueba.ledger ^expenses | less -SC
+hledger balance --daily --cumulative -f prueba.ledger ^expenses ^assets | less -SC
