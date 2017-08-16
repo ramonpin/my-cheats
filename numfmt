@@ -1,0 +1,12 @@
+# Convert bytes to Human readable format
+numfmt --to=iec --suffix=B --padding=7 1048576
+
+# Convert several column from output with complex formatting
+ls -l  | numfmt --header --field 5 --to=si --suffix B --padding 10
+
+# Inverse conversion
+ls -lh | numfmt --header --field 5 --from=iec --padding=10
+
+# Convert several columns
+df -B1 | numfmt --header --field 2-4 --to=si
+
