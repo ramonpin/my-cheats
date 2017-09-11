@@ -25,3 +25,6 @@ pip install dulwich
 # paramiko: ssh client/server python library 
 pip install paramiko
 
+# Ammonite: An advanced Scala REPL.
+URL: http://ammonite.io/
+
