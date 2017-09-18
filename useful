@@ -25,6 +25,11 @@ pip install dulwich
 # paramiko: ssh client/server python library 
 pip install paramiko
 
+# percol: fast query and selection from program output
+pip install percol
+
+URL: https://github.com/mooz/percol
+
 # Ammonite: An advanced Scala REPL.
 URL: http://ammonite.io/
 

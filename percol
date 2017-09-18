@@ -1,0 +1,9 @@
+# Kill a program by selection 
+ps aux | percol | gawk '{print "kill "$2}' | zsh
+
+# Ping an IP from /etc/hosts
+percol /etc/hosts | gawk '{print $1}' | xargs ping
+
+# SSH to selected machine from .ssh/config
+percol ~/.ssh/config | gawk '/^Host/{print $2}' | xargs ssh -tt
+
