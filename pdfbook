@@ -1,0 +1,7 @@
+# Create a twosided A5 leaflet from A4 pdf document
+pdfbook --signature 8 --outfile leaflet.pdf input.pdf
+
+# Generate a A5 leaflet using pandoc and pdfbook
+pandoc -V classoption=twoside -V papersize:a5 -V geometry:margin=.5in README.md -o out.pdf
+pdfbook --signature 8 --outfile leaflet.pdf out.pdf
+

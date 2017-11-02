@@ -4,3 +4,7 @@ pandoc --latex-engine=xelatex --toc -o home.pdf Home.md
 # Complex
 pandoc -N --variable mainfont="Palatino" --variable sansfont="Helvetica" --variable monofont="Menlo" --variable fontsize=12pt --variable version=1.17.2 --latex-engine=xelatex --toc -o home.pdf Home.md
 
+# Generate a A5 leaflet using pandoc and pdfbook
+pandoc -V classoption=twoside -V papersize:a5 -V geometry:margin=.5in README.md -o out.pdf
+pdfbook --signature 8 --outfile leaflet.pdf out.pdf
+
