@@ -2,6 +2,15 @@
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 
+# Set a global .gitignore file.
+# Useful to ignore any **/experimental/** folders globaly without leaking
+# this configuration to other developers.
+git config --global core.excludesfile ~/.gitignore_global
+
+# For local repository only excludes without sharing with other developers
+# There is a .git/info/exclude
+echo "**/experimental/**" > .git/info/exclude
+
 # To set your editor:
 git config --global core.editor emacs
 
