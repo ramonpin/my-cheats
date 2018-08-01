@@ -8,3 +8,5 @@ pandoc -N --variable mainfont="Palatino" --variable sansfont="Helvetica" --varia
 pandoc -V classoption=twoside -V papersize:a5 -V geometry:margin=.5in README.md -o out.pdf
 pdfbook --signature 8 --outfile leaflet.pdf out.pdf
 
+# Generate pdf book with eisvogel template
+pandoc horario/prelude.md horario/*.md -o horario.pdf --from markdown --template eisvogel-book --highlight-style kate --top-level-division=chapter --number-sections
