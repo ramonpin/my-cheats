@@ -1,0 +1,49 @@
+# Shortcuts
+Listado de algunos shortcuts de teclado útiles.
+
+## Generales
+- CTRL-R: Buscar en la historia
+- CTRL-U: Borre desde el cursor hasta el inicio de la línea y lo pasa al portapapeles.
+- CTRL-K: Borra desde el cursor hasta el fin de la línea y lo pasa al portapapeles.
+- CTRL-Y: Pega desde el portapapeles. 
+- CTRL-S: Detiene la salida de texto por pantalla.
+- CTRL-Q: Reinicia la salida de texto por pantalla.
+- CTRL-D: Cierra la consola.
+- CTRL-L: Borra la pantalla.
+
+## Con `fzf`
+- CTRL-T: Buscar un fichero en el path actual y añadir la ruta al commando actual.
+- ALT-C: Buscar un fichero desde el HOME y hacer cambiar a él. 
+
+## Con `byobu`
+- CTRL-a + \                    - kill byobu
+- SHIFT-f6                      - detach without kill
+- CTRL-a + CTRL-d               - detach without kill
+
+### Windows management
+- CTRL-a + c                    - create new window
+- CTRL-a + k                    - kill current window
+- CTRL-a + "                    - choose window from list
+- CTRL-a + s                    - choose window from list
+- CTRL-a + CTRL-space           - next window
+- CTRL-a + CTRL-n               - next window
+- CTRL-a + CTRL-c               - next window + cd to current path  
+- ALT+left, ALT-right           - switch windows
+
+### Panels management
+- CTRL-a + tab                  - next panel
+- CTRL-a + %                    - split current panel by vertical
+- CTRL-a + |                    - split current panel by horizontal
+
+- SHIFT + left,
+- SHIFT + right,
+- SHIFT + up,
+- SHIFT + down                  - switch panels
+
+- ALT+SHIFT-left,
+- ALT+SHIFT-right,
+- ALT+SHIFT-up,
+- ALT+SHIFT-down                - resize panels
+
+- ALT-pgUp, ALT-pgDown          - scroll buffer
+
