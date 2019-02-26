@@ -1,0 +1,5 @@
+# HDFS Tricks
+
+# Upload a compressed file from local to HDFS without decompression
+zcat <gziped-file> | hdfs dfs -put - <hdfs_destination>
+
