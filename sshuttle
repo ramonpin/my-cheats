@@ -1,0 +1,3 @@
+# Redirect all network traffic using bigdata01 as jump machine
+sshuttle -v -r bigdata01 0.0.0.0/0
+
