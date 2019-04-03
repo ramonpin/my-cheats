@@ -1,3 +1,5 @@
 # Redirect all network traffic using bigdata01 as jump machine
 sshuttle -v -r bigdata01 0.0.0.0/0
 
+# In case of connection broken by peer use this syntax
+sshuttle -v -x 10.113.99.120 -r bastion 0.0.0.0/0
