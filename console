@@ -23,7 +23,7 @@ Listado de algunos shortcuts de teclado útiles.
 ### Windows management
 - CTRL-a + c                    - create new window
 - CTRL-a + k                    - kill current window
-- CTRL-a + "                    - choose window from list
+- CTRL-a + \"                   - choose window from list
 - CTRL-a + s                    - choose window from list
 - CTRL-a + CTRL-space           - next window
 - CTRL-a + CTRL-n               - next window

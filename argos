@@ -1,0 +1,29 @@
+# Crear el indice `argos-metrics-test`
+curl --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XPUT 'https://aotlxpppbd10028:9200/argos-metrics-test?pretty' 
+
+# Borrar el indice `argos-metrics-test`
+curl --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XDELETE 'https://aotlxpppbd10028:9200/argos-metrics-*?pretty'
+
+# Listar todos los indices (esta es la unica que no podiamos)
+curl --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XGET 'https://aotlxpppbd10028:9200/_cat/indices/argos*?v&s=index&pretty'
+
+# Indexar un documento con id `1` en el indice `argos-metrics-test`
+curl -v --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XPOST 'https://aotlxpppbd10028:9200/argos-metrics-test/argos_metric/1?pretty' \
+     -H "Content-Type: application/json"  -d '{ "hola": "adios" }'
+
+# Obtener el documento `1` del indice `argos-metrics-test`
+curl --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XGET 'https://aotlxpppbd10028:9200/argos-metrics-test/argos_metric/1?pretty'
+
+# Obtener el documento `1` del indice `argos-metrics-test`
+curl --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XGET 'https://aotlxpppbd10028:9200/argos-metrics-test/_search?q=*&pretty'
+
+# Borrar el documento `1` del indice `argos-metrics-test`
+curl --insecure -H "Authorization: Basic $(echo -n argos:7ftiP1SuHRdpN8KHGLVy | base64)" \
+     -XDELETE 'https://aotlxpppbd10028:9200/argos-metrics-test/argos_metric/1?pretty'
+
